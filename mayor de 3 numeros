@@ -1,0 +1,30 @@
+// Mayor de tres numeros.cpp : Defines the entry point for the console application.
+//Nombre alex vargas
+//fecha 18 de marzo 2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+void main ()
+{float n1, n2, n3;
+cout<< "ingrese el primer numero: ";
+cin>> n1;
+cout<< "ingrese el segundo numero: ";
+cin>> n2;
+cout<< "ingrese el terecer numero: ";
+cin>> n3;
+if (n1>n2)
+	if (n1>n3)
+		cout<<"el mayor es "<<n1;
+	else
+		cout<<"el mayor es "<<n3;
+else
+	if (n2>n3)
+		cout<<"el mayor es "<<n2;
+	else
+		cout<<"el mayor es "<<n3;
+system ("pause");
+}
