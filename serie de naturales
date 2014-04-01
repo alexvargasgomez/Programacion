@@ -1,0 +1,28 @@
+// serie naturales.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+
+{
+	int suma,N;
+	float i;
+	cout<< "ingresar el valor de N: ";
+	cin>> N;
+	suma=0;
+	cout<< "\nsuma ";
+	for(i=1;  i<=N; i++)
+	{
+		suma=suma+pow(i,2);
+		cout<<i<<"**2 + ";
+	}
+	cout<< "\n\nla suma de los "<< N <<" primeros numeros naturales es: " <<suma;
+
+	getch();
+}
