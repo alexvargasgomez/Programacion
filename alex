@@ -1,0 +1,46 @@
+*
+// ejercicio.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std
+
+int man ()
+{
+	int a, b, c, mcd, cont, menor
+	if (a<b&&a<c)
+		menor=;
+	else
+		if (b<a&&b<c)
+			menor=b;
+		else
+			menor=c;
+	mcd=1;
+	cont=2;
+	while(cont<=menor)
+	{
+		a=a/cont;
+		b=b/cont;
+		c=c/cont;
++++++*******************************************************+
+
+// alex.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include"conio.h"
+
+using namespace std;
+
+void main()
+{
+	char caracter='*';
+	int I;
+	for (I=0;I<=19;I++)
+		cout<<caracter;
+	getch();
+}
