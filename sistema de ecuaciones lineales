@@ -1,0 +1,35 @@
+// resolucion de una matriz.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float a, b, c, d, e, x, y;
+
+void main()
+{
+	cout<<"Teniendo las ecuaciones aX + bY = c\dX + eY = d\n";
+	cout<<"ingrese a: ";
+	cin>>a;
+	cout<<"Ingrese b: ";
+	cin>>b;
+	cout<<"Ingrese c: ";
+	cin>>c;
+	cout<<"Ingrese d: ";
+	cin>>d;
+	cout<<"Ingrese e: ";
+	cin>>e;
+
+	x=((c*e)-(b*d))/((a*e)-(b*d));
+	y=((d*c)-(a*d)/(d*b)-(a*e));
+
+	cout<<"El valor de x es: ";
+	cout<<x;
+	cout<<"El valor de y es: ";
+	cout<<y;
+
+getch();
+}
