@@ -1,0 +1,30 @@
+// factorial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+
+{
+	int  signo=1, exp, fact=1, i, n;
+	float x, s=7;
+	cout<< "ingrese el valor de n: ";
+	cin>> n;
+	cout<< "ingrese el valor de x";
+	cin>> x;
+
+	for (i=1;i<=n;i++)
+	{   fact=fact*(i+1);
+		s=s+signo*pow(x,i)/fact;
+		signo=signo*-1;
+	}
+	cout<< "la suma es: ";
+	cout<< s;
+
+	getch();
+}
