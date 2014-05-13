@@ -1,0 +1,44 @@
+// factorial y potencia con funciones : Defines the entry point for the console application.
+//alex vargas
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int factorial (int numero);
+float potencia (float base, int exponente);
+
+void main()
+{ 
+	int base, numero, i;
+	float suma;
+	cout<<"ingresar el valor de la base: ";
+	cin>>base;
+	cout<<"ingresar el valor de N : ";
+	cin>>numero;
+	suma=0;
+	for(i=1;i<=numero;i++)
+		suma=suma+potencia(base,i)/factorial(i);
+	cout<<"la suma es: ";
+	cout<<suma;
+	getch();
+}
+
+int factorial (int numero)
+{
+	int p, i;
+	p=1;
+		for (i=1;i<=numero;i++)
+			p=p*i;
+			return p;
+}
+
+float potencia (float base, int exponente)
+{int p, i;
+p=1;
+for (i=1;i<=exponente;i++)
+p=p*base;
+return p;
+}
